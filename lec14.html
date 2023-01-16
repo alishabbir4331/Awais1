@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      h1 {
+        color: blue;
+        position: relative;
+        display: inline-block;
+        text-shadow: 1px 5px 6px rgba(206, 89, 55, 0.65);
+      }
+
+      h1::after {
+        position: absolute;
+        width: 0%;
+        height: 3px;
+        left: 0;
+        bottom: 0;
+        content: "";
+        color: red;
+        background-color: brown;
+        transition: all 0.5s;
+      }
+
+      h1:hover::after {
+        width: 100%;
+      }
+      .box {
+        height: 40px;
+        width: 40px;
+        border: 2px solid black;
+        box-shadow: 1px 5px 6px rgba(206, 89, 55, 0.65);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Ali Shabbir</h1>
+    <div class="box"></div>
+  </body>
+</html>
